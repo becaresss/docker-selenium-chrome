@@ -1,4 +1,4 @@
-FROM qa.stratio.com:5000/stratio/ubuntu-base:16.04
+FROM qa.stratio.com/stratio/ubuntu-base:16.04
 MAINTAINER Stratio QA team "qa@stratio.com"
 
 ADD http://tools.stratio.com/selenium/selenium-server-standalone-3.1.0.jar /tmp/selenium-server-standalone-3.1.0.jar
