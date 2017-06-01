@@ -5,6 +5,7 @@ hose {
     MODULE = 'docker-selenium-chrome'
     REPOSITORY = 'docker-selenium-chrome'
     SLACKTEAM = 'stratiopaas'
+    BUILDTOOL = 'make'
     DEVTIMEOUT = 45
     PKGMODULESNAMES = ['docker-selenium-chrome']
 

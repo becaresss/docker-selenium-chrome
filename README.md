@@ -4,25 +4,25 @@ Stratio Selenium-Chrome Image
 Here we have the Stratio's Selenium-Chrome image.
 
 * Based on Ubuntu 16.04
-* Selenium Server Standalone 3.1.0
+* Selenium Server Standalone 3.0.1
 * Chromedriver 2.27
 * Chrome version: 56
 * OpenJDK 1.8
 
 ## How to run it?
 
-> docker run -dit -e ID=<ID> --name selenium-chrome docker-selenium-chrome:0.1.0
+```docker run -dit -e ID=<ID> --name selenium-chrome docker-selenium-chrome:0.1.0```
 
 ## How to build it?
 
-> git clone https://github.com/Stratio/docker-selenium-chrome
-> cd docker-selenium-chrome
-> docker build -t docker-selenium-chrome:0.1.0 
+```git clone https://github.com/Stratio/docker-selenium-chrome```
+```cd docker-selenium-chrome```
+```docker build -t docker-selenium-chrome:0.1.0 ```
 
 ## How to extend it?
 
 In your Dockerfile include the next line
-> FROM docker-selenium-chrome:0.1.0
+```FROM docker-selenium-chrome:0.1.0```
 
 ## Enviroment Variables
 
