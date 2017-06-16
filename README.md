@@ -37,7 +37,3 @@ Ex. "SELENIUM_GRID=sl.demo.stratio.com:4444"
 ### USER
 This variable is optional and it is used to execute the browser with an specific user.
 Ex. "USER=jenkins"
-
-### HOST_@
-This variable is optional and it is used to add a host to the /etc/hosts. It can be used more than once, depending on the hosts you want to add.
-Ex. "HOST_1="54.186.74.235 gosec2.labs.stratio.com gosec2" -e HOST_2="54.191.207.46 gosec3.labs.stratio.com gosec3""
