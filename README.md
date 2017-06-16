@@ -11,18 +11,18 @@ Here we have the Stratio's Selenium-Chrome image.
 
 ## How to run it?
 
-```docker run -dit -e ID=<ID> --name selenium-chrome docker-selenium-chrome:0.1.0```
+```docker run -dit -e ID=<ID> --name selenium-chrome docker-selenium-chrome:56```
 
 ## How to build it?
 
 ```git clone https://github.com/Stratio/docker-selenium-chrome```
 ```cd docker-selenium-chrome```
-```docker build -t docker-selenium-chrome:0.1.0 ```
+```docker build -t docker-selenium-chrome:56 ```
 
 ## How to extend it?
 
 In your Dockerfile include the next line
-```FROM docker-selenium-chrome:0.1.0```
+```FROM docker-selenium-chrome:56```
 
 ## Enviroment Variables
 
