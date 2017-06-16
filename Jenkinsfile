@@ -7,7 +7,7 @@ hose {
     SLACKTEAM = 'stratiopaas'
     BUILDTOOL = 'make'
     DEVTIMEOUT = 45
-    PKGMODULESNAMES = ['docker-selenium-chrome']
+    PKGMODULESNAMES = ['selenium-chrome']
 
     DEV = { config ->        
         doDocker(config)

@@ -27,7 +27,7 @@ if [ -n "$USER" ]; then
 	chown ${USER_ID}:${GROUP_ID} /tmp/chromedriver
 
 	su - ${USER_ID} -c "mkdir -p /home/${USER_ID}/log/selenium"
-	su - ${USER_ID} -c "java -Dwebdriver.chrome.driver=/tmp/chromedriver -jar /tmp/selenium-server-standalone-3.0.1.jar -host $HOSTNAME -role node -hub http://${SELENIUM_GRID:=seleniumgrid.cd.stratio.com:4444}/grid/register -browser browserName=chrome,version=56${ID} >> /home/${USER_ID}/log/selenium/selenium-chrome.log &"
+	su - ${USER_ID} -c "java -Dwebdriver.chrome.driver=/tmp/chromedriver -jar /tmp/selenium-server-standalone-3.0.1.jar -host $HOSTNAME -role node -hub http://${SELENIUM_GRID:=seleniumgrid.cd.stratio.com:4444}/grid/register -browser browserName=chrome,version=${VERSION}${ID} >> /home/${USER_ID}/log/selenium/selenium-chrome.log &"
 	su - ${USER_ID} -c "tail -F /home/${USER_ID}/log/selenium/selenium-chrome.log"
 else
 	mkdir -p /tmp/log/selenium
