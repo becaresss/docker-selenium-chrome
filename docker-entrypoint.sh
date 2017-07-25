@@ -13,7 +13,7 @@ chmod u+x /vnc-boot.sh
 
 if [ -n "$USER_NAME" ]; then
     if ! id -u ${USER_NAME} ; then
-        groupadd ${USER_NAME}
+        groupadd ${GROUP_NAME}
         useradd -g ${GROUP_NAME} ${USER_NAME}
     fi
     usermod -u ${USER_ID} ${USER_NAME}
@@ -21,9 +21,9 @@ if [ -n "$USER_NAME" ]; then
 else
     USER_NAME="root"
     GROUP_NAME="root"
-    mkdir -p /home/${USER_NAME}/Downloads
 fi
 
+mkdir -p /home/${USER_NAME}/Downloads
 chown ${USER_NAME}:${GROUP_NAME} /tmp/selenium-server-standalone-3.0.1.jar
 chown ${USER_NAME}:${GROUP_NAME} /tmp/chromedriver
 chown ${USER_NAME}:${GROUP_NAME} /home/${USER_NAME}
