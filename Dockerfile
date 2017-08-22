@@ -1,7 +1,7 @@
 FROM qa.stratio.com/stratio/ubuntu-base:16.04
 MAINTAINER Stratio QA team "qa@stratio.com"
 ARG VERSION
-ENV VERSION=${VERSION}
+ENV CHROME_VERSION=${VERSION}
 
 ADD http://tools.stratio.com/selenium/selenium-server-standalone-3.0.1.jar /tmp/selenium-server-standalone-3.0.1.jar
 ADD http://tools.stratio.com/selenium/chromedriver-2.27 /tmp/chromedriver
